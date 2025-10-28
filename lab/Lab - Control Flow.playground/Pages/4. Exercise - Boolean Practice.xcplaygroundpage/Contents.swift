@@ -26,32 +26,31 @@ else {
  > Remove the comment from each set of conditions in turn and create a print statement that says something like: "I will go for a walk for the first set of conditions" for all 3 conditions to ensure that your code works. Make sure you comment out the other 2 sets each time!
  
  */
-/*
+
 //Set 1
+/*
 let temp = 82
 let isRaining = true
 let isWindy = false
 */
-/*Set 2
+//Set 2
 let temp = 82
 let isRaining = true
 let isWindy = true
-*/
-//Set 3
+
+/*Set 3
 let temp = 75
 let isRaining = false
 let isWindy = true
+ */
 
 
-let walkingWeather : Bool
-if (isRaining || temp >= 82 && !isWindy) {
-    walkingWeather = true
-}
-else{
-    walkingWeather = false
-}
+let walkingWeather : Bool = !isRaining || (temp >= 82 && !isWindy)
 
 if (walkingWeather) {
     print("I'm going for a walk!")
 }
+print("Set 1: Walk")
+print("Set 2: No Walk")
+print("Set 3: Walk")
 //: [Previous](@previous)  |  page 4 of 9  |  [Next](@next)

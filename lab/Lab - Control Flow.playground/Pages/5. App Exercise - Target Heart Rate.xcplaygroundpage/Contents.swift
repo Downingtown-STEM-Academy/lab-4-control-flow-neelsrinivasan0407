@@ -16,11 +16,9 @@ let currentAverage = 95
 
 if currentAverage < targetLowerBound {
     print("You need to study more often.")
-}
-else if currentAverage > targetUpperBound {
+} else if currentAverage > targetUpperBound {
     print("You're right on track!")
-}
-else if currentAverage > targetLowerBound && currentAverage < targetUpperBound {
+} else if currentAverage > targetLowerBound && currentAverage < targetUpperBound {
     print("You're doing great, but try to push it a bit!")
 }
 

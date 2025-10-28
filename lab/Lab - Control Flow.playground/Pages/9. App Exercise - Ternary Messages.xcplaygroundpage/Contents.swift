@@ -11,7 +11,7 @@ let correctQuestions: Int = 18
 } else {
     print("You're doing great.")
  }*/
-var dialogue = Double(correctQuestions) / Double(totalQuestions) < 0.70 ? "You need to study more!" : "You're doing great."
-print(dialogue)
+Double(correctQuestions) / Double(totalQuestions) < 0.70 ? print("You need to study more!") : print("You're doing great.")
+//print(dialogue)
 
 //: [Previous](@previous)  |  page 9 of 9
